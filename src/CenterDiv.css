@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 70px 40px 40px 30px;
+}
+
+.header h2 {
+  font-size: 35px;
+}
+
+.header span {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.header button {
+  border: 1px solid white;
+  background-color: white;
+  font-size: 10px;
+  font-weight: 600;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+
+.header button:hover {
+  border-radius: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.item img {
+  width: 250px;
+  height: 230px;
+  object-fit: cover;
+  margin: 30px 0;
+}
+
+.description {
+  text-align: left;
+}
+
+.description h3 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.description p {
+  font-size: 9px;
+  width: 200px;
+}
+
+/* Media Query for screens less than 1000px */
+@media screen and (max-width: 1000px) {
+  .center-container {
+    height: auto;
+  }
+
+  .content {
+    width: auto;
+    margin: 0;
+    margin: 0 15px 0 15px;
+
+  }
+
+  .item {
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text inside items */
+    margin: 10px 0;
+  }
+
+  .item:nth-child(2),
+  .item:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+
+  .item img {
+    width: 250px;
+    height: 230px;
+    object-fit: cover;
+    margin: 30px 0;
+  }
+
+  .item .description {
+    width: 100%;
+    text-align: center; /* Center align text in the description */
+    margin: 0 10px 10px 10px;
+  }
+
+  .description h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .item .description p {
+    font-size: 11px;
+    width: 100%;
+    text-align: left;
+  }
+}

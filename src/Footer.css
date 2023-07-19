@@ -1,0 +1,140 @@
+.footer {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .footer-info {
+    display: flex;
+    margin: 30px 10px;
+  }
+  
+  .footer-logo {
+    width: 99%;
+    margin: 50px;
+  }
+  
+  .app-details {
+    display: flex;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    width: 300px;
+  }
+  
+  .footer-links a {
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin: 10px 0 15px 20px;
+  }
+  
+  .footer-address span {
+    margin-top: 10px;
+  }
+  
+  .footer-buttons button {
+    margin: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    width: auto;
+    height: 30px;
+    padding: 0 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 400ms ease-in;
+  }
+  
+  .footer-buttons button:hover {
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  
+  .footer-buttons img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+  }
+  
+  .footer-terms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    width: 100vw;
+    border-top: 2px solid grey;
+    height: 50px;
+  }
+  
+  .terms span {
+    margin: 20px;
+  }
+  
+  .terms span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .logos img {
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: 200ms ease-in;
+  }
+  
+  .logos img:hover {
+    background-color: #878585;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+
+    .footer-info{
+      flex-direction: column-reverse;
+    }
+    .app-details{
+      flex-direction: column;
+    }
+
+
+    .app-details,
+    .footer-logo {
+      width: 100%;
+      margin: 0;
+    }
+
+    .footer-terms{
+      flex-direction: column;
+      border: none;
+      background-color: #f9f9f9;
+      align-items: flex-start;
+    }
+    .logos{
+      margin-left:20px ;
+      font-size: 10px;
+    }
+    .logos img{
+      width: 10px;
+      height: 10px;
+    }
+    .terms{
+      font-size: 9px;
+    }
+  }
+  

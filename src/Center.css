@@ -1,0 +1,144 @@
+.parent-div {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.Center {
+  margin: 0 10%;
+  background-color: #f9f9f9;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.heading h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.heading span {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row2 .card {
+  height: auto;
+}
+
+.row .column:first-child {
+  flex: 1.5;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.card-head {
+  display: flex;
+  margin: 10px 20px 0 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.card p {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 9px;
+}
+
+.card #img2{
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  margin: 5px;
+}
+
+.card #img3{
+  object-fit: cover;
+  width: auto;
+  margin: 5px;
+}
+
+.card-head-content {
+  text-align: left;
+}
+
+.card-logo {
+  width: 60px;
+}
+
+.card-head-content-2 {
+  text-align: left;
+}
+
+.card-head-content-2 h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.card-head-content-2 p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.card-img-2 {
+  width: 40px;
+  margin-left: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .Center {
+    margin: 10px;
+  }
+
+  .row,.row2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row .column {
+    flex: 1;
+    /* Set the flex value for all columns to 1 to make them line up in a column */
+  }
+
+  .column {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
