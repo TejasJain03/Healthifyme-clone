@@ -4,12 +4,13 @@
     width: 100vw;
     max-height: 1200px;
     justify-content: center;
+    background-color: black;
     align-items: center;
   }
   
   .review-header {
     margin: 10px 0 90px 0;
-    /* text-align: center; */
+    text-align: center;
   }
   
   .review-header span {
