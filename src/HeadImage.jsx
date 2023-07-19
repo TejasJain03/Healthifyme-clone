@@ -6,7 +6,7 @@ export default function HeadImage() {
       <div className='image-div'>
         <img
           className="head-image"
-          src="https://i.ytimg.com/vi/GY9FQQjcA1A/maxresdefault.jpg"
+          src="\HeadImage.jpg"
         />
       </div>
     </>
